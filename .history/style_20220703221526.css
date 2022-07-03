@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #4dbf00;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list-item {
+    margin-right: 30px;   /* item 간 간격 조정 */
+}
+
+.menu-list-item.active {  /* class 를 2개 부여해서 선택해 줌 */
+    font-weight: bold;
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;   /* 가로세로 비율은 유지하면서 컨텐이너에 꽉 차게 설정 */
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;  /* toggle-ball을 toggle내에서 움직이도록 설정 */
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;  /* 독립적이고 자유로운 배치권한 부여 */
+    right: 1px;
+    cursor: pointer;
+}
+
+.profile-text-container {
+    margin: 0 20px;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;   /* 스크롤바 생기는 부분 제거 및 사이드바 고정 */
+    top: 0;     /* 사이드바 상단 고정 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+

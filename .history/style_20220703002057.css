@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+/* font-family: 'Sen', sans-serif; */
+    /* overflow: hidden; */
+}
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.menu-container {
+    flex: 1;
+}
+
+.profile-container {
+    flex: 1;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;   /* 스크롤바 생기는 부분 제거 및 사이드바 고정 */
+    top: 100px;     /* 사이드바 상단 고정 */
+}
+
